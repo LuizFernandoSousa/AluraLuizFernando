@@ -1,0 +1,15 @@
+D:\Luiz - PC\Aula de programação\Estudos de C#\Alura\ByteBank\ByteBank\bin\Debug\net6.0\ByteBank.exe
+D:\Luiz - PC\Aula de programação\Estudos de C#\Alura\ByteBank\ByteBank\bin\Debug\net6.0\ByteBank.deps.json
+D:\Luiz - PC\Aula de programação\Estudos de C#\Alura\ByteBank\ByteBank\bin\Debug\net6.0\ByteBank.runtimeconfig.json
+D:\Luiz - PC\Aula de programação\Estudos de C#\Alura\ByteBank\ByteBank\bin\Debug\net6.0\ByteBank.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\Alura\ByteBank\ByteBank\bin\Debug\net6.0\ByteBank.pdb
+D:\Luiz - PC\Aula de programação\Estudos de C#\Alura\ByteBank\ByteBank\obj\Debug\net6.0\ByteBank.csproj.AssemblyReference.cache
+D:\Luiz - PC\Aula de programação\Estudos de C#\Alura\ByteBank\ByteBank\obj\Debug\net6.0\ByteBank.GeneratedMSBuildEditorConfig.editorconfig
+D:\Luiz - PC\Aula de programação\Estudos de C#\Alura\ByteBank\ByteBank\obj\Debug\net6.0\ByteBank.AssemblyInfoInputs.cache
+D:\Luiz - PC\Aula de programação\Estudos de C#\Alura\ByteBank\ByteBank\obj\Debug\net6.0\ByteBank.AssemblyInfo.cs
+D:\Luiz - PC\Aula de programação\Estudos de C#\Alura\ByteBank\ByteBank\obj\Debug\net6.0\ByteBank.csproj.CoreCompileInputs.cache
+D:\Luiz - PC\Aula de programação\Estudos de C#\Alura\ByteBank\ByteBank\obj\Debug\net6.0\ByteBank.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\Alura\ByteBank\ByteBank\obj\Debug\net6.0\refint\ByteBank.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\Alura\ByteBank\ByteBank\obj\Debug\net6.0\ByteBank.pdb
+D:\Luiz - PC\Aula de programação\Estudos de C#\Alura\ByteBank\ByteBank\obj\Debug\net6.0\ByteBank.genruntimeconfig.cache
+D:\Luiz - PC\Aula de programação\Estudos de C#\Alura\ByteBank\ByteBank\obj\Debug\net6.0\ref\ByteBank.dll
