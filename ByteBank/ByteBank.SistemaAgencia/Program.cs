@@ -15,6 +15,11 @@ namespace ByteBank.SistemaAgencia
             Lista<int> lista = new Lista<int>();
 
 
+            lista.Adicionar(6);
+            lista.Adicionar(7);
+            lista.Adicionar(4);
+
+            lista.AdicionarVarios(8,34,534);
 
             for (int i = 0; i < lista.tamanho; i++)
             {
