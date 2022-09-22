@@ -5,6 +5,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using ByteBank.Modelos;
+using ByteBank.SistemaAgencia.Comparador;
 
 namespace ByteBank.SistemaAgencia
 {
@@ -23,8 +24,9 @@ namespace ByteBank.SistemaAgencia
 
             };
 
-            contas.Sort();
+            //contas.Sort();
 
+            contas.Sort(new ComparadorContaCorrentePorAgencia());
 
             foreach (var conta in contas)
             {
