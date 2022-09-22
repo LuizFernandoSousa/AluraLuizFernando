@@ -17,10 +17,7 @@ namespace ByteBank.SistemaAgencia
 
             idades.Add(6);
             idades.Add(6);
-            idades.Add(6);
-            idades.Add(6);
-            idades.Add(6);
-
+           
             //idades.Remove(4);
             //  ListExtensoes.AdicionarVarios(idades,123,3123,421,4243);
 
