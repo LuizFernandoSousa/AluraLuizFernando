@@ -16,3 +16,9 @@ C:\Users\Fernando\Source\Repos\LuizFernandoSousa\AluraLuizFernando\ByteBank\Byte
 C:\Users\Fernando\Source\Repos\LuizFernandoSousa\AluraLuizFernando\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.csproj.CoreCompileInputs.cache
 C:\Users\Fernando\Source\Repos\LuizFernandoSousa\AluraLuizFernando\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.dll
 C:\Users\Fernando\Source\Repos\LuizFernandoSousa\AluraLuizFernando\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.pdb
+C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura\GitHub\AluraLuizFernando\ByteBank\ByteBank.Modelos\bin\Debug\ByteBank.Modelos.dll
+C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura\GitHub\AluraLuizFernando\ByteBank\ByteBank.Modelos\bin\Debug\ByteBank.Modelos.pdb
+C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura\GitHub\AluraLuizFernando\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.csproj.AssemblyReference.cache
+C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura\GitHub\AluraLuizFernando\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.csproj.CoreCompileInputs.cache
+C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura\GitHub\AluraLuizFernando\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.dll
+C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura\GitHub\AluraLuizFernando\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.pdb

@@ -31,3 +31,14 @@ C:\Users\Fernando\Source\Repos\LuizFernandoSousa\AluraLuizFernando\ByteBank\Byte
 C:\Users\Fernando\Source\Repos\LuizFernandoSousa\AluraLuizFernando\ByteBank\ByteBank.SistemaAgencia\bin\Debug\ByteBank.Modelos.dll
 C:\Users\Fernando\Source\Repos\LuizFernandoSousa\AluraLuizFernando\ByteBank\ByteBank.SistemaAgencia\bin\Debug\ByteBank.Modelos.pdb
 C:\Users\Fernando\Source\Repos\LuizFernandoSousa\AluraLuizFernando\ByteBank\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.csproj.CopyComplete
+C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura\GitHub\AluraLuizFernando\ByteBank\ByteBank.SistemaAgencia\bin\Debug\ByteBank.SistemaAgencia.exe.config
+C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura\GitHub\AluraLuizFernando\ByteBank\ByteBank.SistemaAgencia\bin\Debug\ByteBank.SistemaAgencia.exe
+C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura\GitHub\AluraLuizFernando\ByteBank\ByteBank.SistemaAgencia\bin\Debug\ByteBank.SistemaAgencia.pdb
+C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura\GitHub\AluraLuizFernando\ByteBank\ByteBank.SistemaAgencia\bin\Debug\ByteBank.Modelos.dll
+C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura\GitHub\AluraLuizFernando\ByteBank\ByteBank.SistemaAgencia\bin\Debug\ByteBank.Modelos.pdb
+C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura\GitHub\AluraLuizFernando\ByteBank\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.csproj.AssemblyReference.cache
+C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura\GitHub\AluraLuizFernando\ByteBank\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.csproj.SuggestedBindingRedirects.cache
+C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura\GitHub\AluraLuizFernando\ByteBank\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.csproj.CoreCompileInputs.cache
+C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura\GitHub\AluraLuizFernando\ByteBank\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.csproj.CopyComplete
+C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura\GitHub\AluraLuizFernando\ByteBank\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.exe
+C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura\GitHub\AluraLuizFernando\ByteBank\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.pdb
