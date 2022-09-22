@@ -22,3 +22,9 @@ C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura
 C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura\GitHub\AluraLuizFernando\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.csproj.CoreCompileInputs.cache
 C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura\GitHub\AluraLuizFernando\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.dll
 C:\Users\luiz.barros\OneDrive - Strattner\Documentos\Programação\Estudos\Alura\GitHub\AluraLuizFernando\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.pdb
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\ByteBank\ByteBank.Modelos\bin\Debug\ByteBank.Modelos.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\ByteBank\ByteBank.Modelos\bin\Debug\ByteBank.Modelos.pdb
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.csproj.AssemblyReference.cache
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.csproj.CoreCompileInputs.cache
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.pdb
