@@ -51,7 +51,7 @@ namespace ByteBank.SistemaAgencia
             }
 
             _proximaPosicao--;
-            _itens[_proximaPosicao] = null;
+            
 
         }
 

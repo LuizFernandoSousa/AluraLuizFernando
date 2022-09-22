@@ -12,22 +12,26 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
-            Lista<int> lista = new Lista<int>();
+            List<int> idades = new List<int>();
 
 
-            lista.Adicionar(6);
-            lista.Adicionar(7);
-            lista.Adicionar(4);
+            idades.Add(6);
+            idades.Add(6);
+            idades.Add(6);
+            idades.Add(6);
+            idades.Add(6);
 
-            lista.AdicionarVarios(8,34,534);
+            //idades.Remove(4);
+            //  ListExtensoes.AdicionarVarios(idades,123,3123,421,4243);
 
-            for (int i = 0; i < lista.tamanho; i++)
+
+            idades.AdicionarVarios(123, 3123, 421, 4243);
+
+
+            for (int i = 0; i < idades.Count; i++)
             {
-                int idade = (int)lista[i];
-                Console.WriteLine($"Idade no indice {i}: {idade}");
+                Console.WriteLine(idades[i]);
             }
-
-
 
 
 
