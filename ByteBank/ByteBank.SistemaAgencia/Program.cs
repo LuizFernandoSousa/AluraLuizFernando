@@ -24,15 +24,26 @@ namespace ByteBank.SistemaAgencia
 
             };
 
-            //contas.Sort();
+            var listaSemNulos = new List<ContaCorrente>();
 
-            //contas.Sort(new ComparadorContaCorrentePorAgencia());
+            foreach (var conta in contas)
+            {
+                listaSemNulos.Add(conta);
+            }
+              
 
-            IOrderedEnumerable<ContaCorrente> listaOrdenada = contas.OrderBy(conta => conta.Numero);
+            //IEnumerable<ContaCorrente> contaCorrentes =
+            //    contas.Where(conta => contas != null) ;
+
+            IOrderedEnumerable<ContaCorrente> listaOrdenada = contas
+                .Where(conta => contas != null)
+                .OrderBy<ContaCorrente, int>(conta => conta.Numero);
+
 
             foreach (var conta in listaOrdenada)
-            {
-                Console.WriteLine($"Conta número {conta.Numero}, ag. {conta.Agencia}");
+            {                
+                    Console.WriteLine($"Conta número {conta.Numero}, ag. {conta.Agencia}");              
+               
             }
 
 
