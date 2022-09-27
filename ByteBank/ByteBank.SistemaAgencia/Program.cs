@@ -14,6 +14,15 @@ namespace ByteBank.SistemaAgencia
         static void Main(string[] args)
         {
 
+            
+
+
+            Console.ReadLine();
+
+        }
+
+        public static void TesteInterfaceComparacao()
+        {
             var contas = new List<ContaCorrente>()
             {
                 new ContaCorrente(543566,9),
@@ -30,7 +39,7 @@ namespace ByteBank.SistemaAgencia
             {
                 listaSemNulos.Add(conta);
             }
-              
+
 
             //IEnumerable<ContaCorrente> contaCorrentes =
             //    contas.Where(conta => contas != null) ;
@@ -41,9 +50,9 @@ namespace ByteBank.SistemaAgencia
 
 
             foreach (var conta in listaOrdenada)
-            {                
-                    Console.WriteLine($"Conta número {conta.Numero}, ag. {conta.Agencia}");              
-               
+            {
+                Console.WriteLine($"Conta número {conta.Numero}, ag. {conta.Agencia}");
+
             }
 
 
@@ -61,7 +70,7 @@ namespace ByteBank.SistemaAgencia
 
             idades.AdicionarVarios(123, 3123, 421, 4243);
 
-            idades.AdicionarVarios(99,-1);
+            idades.AdicionarVarios(99, -1);
 
 
             idades.Sort();
@@ -71,13 +80,7 @@ namespace ByteBank.SistemaAgencia
                 Console.WriteLine(idades[i]);
             }
 
-
-
-            Console.ReadLine();
-
         }
-
-
         public static void TesteDeArray()
         {
 
