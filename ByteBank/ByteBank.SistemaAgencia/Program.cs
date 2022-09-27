@@ -6,6 +6,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using ByteBank.Modelos;
 using ByteBank.SistemaAgencia.Comparador;
+using System.IO;
 
 namespace ByteBank.SistemaAgencia
 {
@@ -13,9 +14,9 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
+            var enderecoDoArquivo = "D:\\Luiz - PC\\Aula de programação\\Estudos de C#\\AluraLuizFernando\\contas.txt";
 
-            
-
+            var fluxoDoArquivo = new FileStream(enderecoDoArquivo,FileMode.Open);
 
             Console.ReadLine();
 
