@@ -14,12 +14,43 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
-            var enderecoDoArquivo = "D:\\Luiz - PC\\Aula de programação\\Estudos de C#\\AluraLuizFernando\\contas.txt";
+            var enderecoDoArquivo = "contas.txt";
 
             var fluxoDoArquivo = new FileStream(enderecoDoArquivo,FileMode.Open);
 
+            var buffer = new byte[1024];
+
+            fluxoDoArquivo.Read(buffer, 0, 1024);
+            var numeroDeByteLidos = -1;
+
+
+            while (numeroDeByteLidos != 0)
+            {
+                numeroDeByteLidos = fluxoDoArquivo.Read(buffer, 0, 1024);
+                EscreverBuffer(buffer);
+            }
+            
+
+
+
             Console.ReadLine();
 
+        }
+
+        static void EscreverBuffer(byte[]buffer )
+        {
+            var utf8 = new UTF8Encoding();
+
+            var texto = utf8.GetString(buffer);
+
+            Console.Write(texto);
+
+
+            //foreach (var meuByte in buffer)
+            //{
+            //    Console.Write(meuByte);
+            //    Console.Write(" ");
+            //}
         }
 
         public static void TesteInterfaceComparacao()
