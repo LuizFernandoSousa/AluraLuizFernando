@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Comparador\ComparadorContaCorrentePorAgencia.cs" />
     <Compile Include="ExtratorValordeArgumentosURL.cs" />
+    <Compile Include="1_LidandoComStreamDiretamente.cs" />
     <Compile Include="Lista.cs" />
     <Compile Include="ListaDeContaCorrente.cs" />
     <Compile Include="ListaDeObjetct.cs" />
