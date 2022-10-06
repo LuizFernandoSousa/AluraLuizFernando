@@ -213,11 +213,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Luiz - PC\\Aula de programação\\Estudos de C#\\APIAlura\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj",
+      "projectUniqueName": "D:\\Luiz - PC\\Aula de programação\\Estudos de C#\\AluraLuizFernando\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj",
       "projectName": "FilmesAPI",
-      "projectPath": "D:\\Luiz - PC\\Aula de programação\\Estudos de C#\\APIAlura\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj",
+      "projectPath": "D:\\Luiz - PC\\Aula de programação\\Estudos de C#\\AluraLuizFernando\\FilmesAPI\\FilmesAPI\\FilmesAPI.csproj",
       "packagesPath": "C:\\Users\\Fernando\\.nuget\\packages\\",
-      "outputPath": "D:\\Luiz - PC\\Aula de programação\\Estudos de C#\\APIAlura\\FilmesAPI\\FilmesAPI\\obj\\",
+      "outputPath": "D:\\Luiz - PC\\Aula de programação\\Estudos de C#\\AluraLuizFernando\\FilmesAPI\\FilmesAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Fernando\\AppData\\Roaming\\NuGet\\NuGet.Config",
