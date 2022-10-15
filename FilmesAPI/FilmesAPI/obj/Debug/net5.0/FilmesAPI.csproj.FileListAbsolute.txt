@@ -26,8 +26,6 @@ D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\Fil
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\MySql.Data.dll
-D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\Ubiety.Dns.Core.dll
-D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\Zstandard.Net.dll
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\MySql.EntityFrameworkCore.dll
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -45,3 +43,4 @@ D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\Fil
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\obj\Debug\net5.0\FilmesAPI.pdb
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\obj\Debug\net5.0\FilmesAPI.genruntimeconfig.cache
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\obj\Debug\net5.0\ref\FilmesAPI.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\ZstdNet.dll
