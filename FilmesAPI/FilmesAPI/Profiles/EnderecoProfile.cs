@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using FilmesAPI.Data;
-using FilmesAPI.Data.Dtos.Filme;
+using FilmesAPI.Data.Dtos;
+using FilmesAPI.Data.Dtos.Endereco;
 using FilmesAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -11,14 +12,13 @@ using System.Threading.Tasks;
 
 namespace FilmesAPI.Profiles
 {
-    public class FilmeProfile : Profile
+    public class EnderecoProfile : Profile
     {
-
-        public FilmeProfile()
+        public EnderecoProfile()
         {
-            CreateMap<CreateCinemaDto, Filme>();
-            CreateMap<Filme, ReadCinemaDto>();
-            CreateMap<UpdateCinemaDto,Filme>();
+            CreateMap<CreateEnderecoDto, Cinema>();
+            CreateMap<Cinema, ReadEnderecoDto>();
+            CreateMap<UpdateEnderecoDto, Cinema>();
         }
     }
 }

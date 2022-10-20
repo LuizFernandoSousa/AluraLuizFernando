@@ -1,5 +1,4 @@
-﻿using FilmesAPI.Data;
-using FilmesAPI.Models;
+﻿using FilmesAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -8,9 +7,9 @@ using System.Linq;
 using System.Threading.Tasks;
 
 
-namespace FilmesAPI.Data.Dtos
+namespace FilmesAPI.Data.Dtos.Filme
 {
-    public class CreateFilmeDto
+    public class CreateCinemaDto
     {
 
         [Required(ErrorMessage = "O campo titulo deve ser obrigatorio")]
