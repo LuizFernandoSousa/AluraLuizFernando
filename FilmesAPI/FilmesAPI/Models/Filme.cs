@@ -28,7 +28,6 @@ namespace FilmesAPI.Models
         [Range(1,600,ErrorMessage = " A duração deve conter no minimo 1 e no maximo 600 minutos")]
         public int Duracao { get; set; }
 
-        public int ClassificacaoEtaria { get; set; }
 
     }
 }

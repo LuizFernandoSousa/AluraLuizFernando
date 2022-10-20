@@ -26,7 +26,7 @@ namespace FilmesAPI.Controllers
 
         [HttpPost]
 
-        public IActionResult AdicionaFilme([FromBody] CreateCinemaDto filmedto)
+        public IActionResult AdicionaFilme([FromBody] CreateFilmeDto filmedto)
         {
             Filme filme = _mapper.Map<Filme>(filmedto);
 
@@ -50,7 +50,7 @@ namespace FilmesAPI.Controllers
 
             if (filme != null)
             {
-                ReadCinemaDto filmeDto = _mapper.Map<ReadCinemaDto>(filme);
+                ReadFilmeDto filmeDto = _mapper.Map<ReadFilmeDto>(filme);
 
                 return Ok(filme);
             }
@@ -60,7 +60,7 @@ namespace FilmesAPI.Controllers
 
 
         [HttpPut("{id}")]
-        public IActionResult AtualizarFilme(int id, [FromBody] UpdateCinemaDto filmeDto)
+        public IActionResult AtualizarFilme(int id, [FromBody] UpdateFilmeDto filmeDto)
         {
             Filme filme = _context.Filmes.FirstOrDefault(filme => filme.Id == id);
             if (filme==null)

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FilmesAPI.Data.Dtos.Filme
 {
-    public class UpdateCinemaDto
+    public class UpdateFilmeDto
     {
 
         [Required(ErrorMessage = "O campo titulo deve ser obrigatorio")]

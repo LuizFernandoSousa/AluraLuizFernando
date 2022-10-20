@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace FilmesAPI.Data.Dtos.Filme
 {
-    public class ReadCinemaDto
+    public class ReadFilmeDto
     {
         [Key]
         [Required]

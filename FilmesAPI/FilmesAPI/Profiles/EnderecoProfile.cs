@@ -16,9 +16,9 @@ namespace FilmesAPI.Profiles
     {
         public EnderecoProfile()
         {
-            CreateMap<CreateEnderecoDto, Cinema>();
-            CreateMap<Cinema, ReadEnderecoDto>();
-            CreateMap<UpdateEnderecoDto, Cinema>();
+            CreateMap<CreateEnderecoDto, Endereco>();
+            CreateMap<Endereco, ReadEnderecoDto>();
+            CreateMap<UpdateEnderecoDto, Endereco>();
         }
     }
 }

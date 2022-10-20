@@ -50,3 +50,5 @@ D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\Fil
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\Castle.Core.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Proxies.dll

@@ -7,12 +7,11 @@ using System.Linq;
 using System.Threading.Tasks;
 
 
-namespace FilmesAPI.Data.Dtos.Cinema
+namespace FilmesAPI.Data.Dtos.Gerente
 {
-    public class UpdateCinemaDto
+    public class UpdateGerenteDto
     {
 
-        [Required(ErrorMessage = "O campo titulo deve ser obrigatorio")]
         public string Nome { get; set; }
 
     }

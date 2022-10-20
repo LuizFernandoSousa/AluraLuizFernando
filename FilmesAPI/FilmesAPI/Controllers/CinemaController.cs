@@ -5,9 +5,13 @@ using Org.BouncyCastle.Crypto;
 using FilmesAPI.Data.Dtos.Filme;
 using AutoMapper;
 using System.Linq;
+using System.Collections.Generic;
+using FilmesAPI.Data.Dtos.Cinema;
 
 namespace FilmesAPI.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class CinemaController : ControllerBase
     {
         private AppDbContext _context;
@@ -19,21 +23,18 @@ namespace FilmesAPI.Controllers
         }
 
         [HttpPost]
-
         public IActionResult AdicionaCinema([FromBody] CreateCinemaDto cinemaDto)
         {
             Cinema cinema = _mapper.Map<Cinema>(cinemaDto);
-
-
             _context.Cinemas.Add(cinema);
             _context.SaveChanges();
             return CreatedAtAction(nameof(RecuperaCinemasPorID), new { id = cinema.Id }, cinema);
         }
 
         [HttpGet]
-        public IActionResult RecuperaCinemas()
+        public IEnumerable<Cinema> RecuperaCinemas([FromQuery] string nomeDoFilme)
         {
-            return Ok(_context.Cinemas);
+            return _context.Cinemas;
         }
 
         [HttpGet("{id}")]
