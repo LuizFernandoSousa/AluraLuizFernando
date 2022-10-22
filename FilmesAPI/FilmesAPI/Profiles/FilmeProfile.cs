@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using FilmesAPI.Data;
 using FilmesAPI.Data.Dtos.Cinema;
+using FilmesAPI.Data.Dtos.Filme;
 using FilmesAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -16,9 +17,9 @@ namespace FilmesAPI.Profiles
 
         public FilmeProfile()
         {
-            CreateMap<CreateCinemaDto, Filme>();
-            CreateMap<Filme, ReadCinemaDto>();
-            CreateMap<UpdateCinemaDto,Filme>();
+            CreateMap<CreateFilmeDto, Filme>();
+            CreateMap<Filme, ReadFilmeDto>();
+            CreateMap<UpdateFilmeDto, Filme>();
         }
     }
 }

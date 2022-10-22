@@ -2,7 +2,6 @@
 using FilmesAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Org.BouncyCastle.Crypto;
-using FilmesAPI.Data.Dtos.Filme;
 using AutoMapper;
 using System.Linq;
 using System.Collections.Generic;
