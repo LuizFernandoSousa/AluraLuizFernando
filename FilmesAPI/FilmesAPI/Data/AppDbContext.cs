@@ -28,7 +28,7 @@ namespace FilmesAPI.Data
                 .WithMany(gerente => gerente.Cinemas)
                 .HasForeignKey(cinema => cinema.GerenteId).IsRequired(false);
 
-            builder.Entity<Sessao>()
+           builder.Entity<Sessao>()
                 .HasOne(sessao => sessao.Filme)
                 .WithMany(filme => filme.Sessoes)
                 .HasForeignKey(Sessao => Sessao.FilmeId);
@@ -37,7 +37,7 @@ namespace FilmesAPI.Data
                 .HasOne(sessao => sessao.Cinema)
                 .WithMany(Cinema => Cinema.Sessoes)
                 .HasForeignKey(sessao => sessao.CinemaId);
-
+           
 
 
         }

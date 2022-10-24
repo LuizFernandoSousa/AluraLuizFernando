@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FilmesAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221022013425_relacao filem com cinema")]
-    partial class relacaofilemcomcinema
+    [Migration("20221022221124_Adicionando Sessao")]
+    partial class AdicionandoSessao
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -71,8 +71,10 @@ namespace FilmesAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    b.Property<int>("ClassificacaoEtaria")
+                        .HasColumnType("int");
+
                     b.Property<string>("Diretor")
-                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");
 
@@ -80,8 +82,7 @@ namespace FilmesAPI.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Genero")
-                        .HasMaxLength(30)
-                        .HasColumnType("varchar(30)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Titulo")
                         .IsRequired()

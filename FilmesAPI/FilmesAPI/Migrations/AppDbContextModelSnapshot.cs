@@ -69,8 +69,10 @@ namespace FilmesAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    b.Property<int>("ClassificacaoEtaria")
+                        .HasColumnType("int");
+
                     b.Property<string>("Diretor")
-                        .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");
 
@@ -78,8 +80,7 @@ namespace FilmesAPI.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Genero")
-                        .HasMaxLength(30)
-                        .HasColumnType("varchar(30)");
+                        .HasColumnType("text");
 
                     b.Property<string>("Titulo")
                         .IsRequired()

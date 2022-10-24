@@ -1,11 +1,5 @@
-﻿using FilmesAPI.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿
 using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
-
 
 namespace FilmesAPI.Data.Dtos.Sessao
 {
@@ -14,6 +8,8 @@ namespace FilmesAPI.Data.Dtos.Sessao
         public int Id { get; set; }
         public object Cinema { get; set; }
         public object Filme { get; set; }
+        public DateTime HorarioDeEncerramento { get; set; }
+        public DateTime HorarioDeInicio { get; set; }
 
     }
 }
