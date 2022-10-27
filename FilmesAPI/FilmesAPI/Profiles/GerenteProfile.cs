@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
-using FilmesAPI.Data.Dtos.Filme;
-using FilmesAPI.Data.Dtos.Gerente;
+using FilmesAPI.Data.Dtos;
 using FilmesAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -20,7 +19,6 @@ namespace FilmesAPI.Profiles
                 .ForMember(gerente => gerente.cinemas, opts => opts
                 .MapFrom(gerente => gerente.Cinemas.Select
                 (c => new {c.Id,c.Nome,c.Endereco,c.EnderecoId}))) ;
-            CreateMap<UpdateGerenteDto, Gerente>();
         }
         
     }

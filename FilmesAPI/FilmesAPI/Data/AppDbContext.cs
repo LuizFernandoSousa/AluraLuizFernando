@@ -10,7 +10,6 @@ namespace FilmesAPI.Data
 {
     public class AppDbContext : DbContext
     {
-
         public AppDbContext(DbContextOptions<AppDbContext> opt) : base(opt)
         {
 
@@ -26,7 +25,7 @@ namespace FilmesAPI.Data
             builder.Entity<Cinema>()
                 .HasOne(cinema => cinema.Gerente)
                 .WithMany(gerente => gerente.Cinemas)
-                .HasForeignKey(cinema => cinema.GerenteId).IsRequired(false);
+                .HasForeignKey(cinema => cinema.GerenteId);
 
            builder.Entity<Sessao>()
                 .HasOne(sessao => sessao.Filme)
@@ -37,7 +36,7 @@ namespace FilmesAPI.Data
                 .HasOne(sessao => sessao.Cinema)
                 .WithMany(Cinema => Cinema.Sessoes)
                 .HasForeignKey(sessao => sessao.CinemaId);
-           
+
 
 
         }
@@ -48,7 +47,6 @@ namespace FilmesAPI.Data
         public DbSet<Endereco> Enderecos { get; set; }
         public DbSet<Gerente> Gerentes { get; set; }
         public DbSet<Sessao> Sessoes { get; set; }
-         
 
     }
 }

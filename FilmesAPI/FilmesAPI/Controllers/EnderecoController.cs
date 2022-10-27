@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using FilmesAPI.Data;
-using FilmesAPI.Data.Dtos.Endereco;
-using FilmesAPI.Data.Dtos.Filme;
+using FilmesAPI.Data.Dtos;
 using FilmesAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -19,6 +18,7 @@ namespace FilmesAPI.Controllers
     {
         private AppDbContext _context;
         private IMapper _mapper;
+
         public EnderecoController(AppDbContext context, IMapper mapper)
         {
             _context = context;
@@ -26,21 +26,18 @@ namespace FilmesAPI.Controllers
         }
 
         [HttpPost]
-
         public IActionResult AdicionaEndereco([FromBody] CreateEnderecoDto enderecoDto)
         {
             Endereco endereco  = _mapper.Map<Endereco>(enderecoDto);
-
-
             _context.Enderecos.Add(endereco);
             _context.SaveChanges();
-            return CreatedAtAction(nameof(RecuperaEnderecoPorID), new { id = endereco.Id }, endereco);
+            return CreatedAtAction(nameof(RecuperaEnderecoPorID), new { Id = endereco.Id }, endereco);
         }
 
         [HttpGet]
-        public IActionResult RecuperaEndereco()
+        public IEnumerable<Endereco> RecuperaEndereco()
         {
-            return Ok(_context.Enderecos);
+            return _context.Enderecos;
         }
 
         [HttpGet("{id}")]

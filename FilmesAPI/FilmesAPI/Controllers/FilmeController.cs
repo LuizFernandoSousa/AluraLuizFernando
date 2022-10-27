@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using FilmesAPI.Data;
-using FilmesAPI.Data.Dtos.Filme;
+using FilmesAPI.Data.Dtos;
 using FilmesAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -29,17 +29,29 @@ namespace FilmesAPI.Controllers
         public IActionResult AdicionaFilme([FromBody] CreateFilmeDto filmedto)
         {
             Filme filme = _mapper.Map<Filme>(filmedto);
-
-
             _context.Filmes.Add(filme);
             _context.SaveChanges();
             return CreatedAtAction(nameof(RecuperaFilmesPorID), new { id = filme.Id }, filme);
         }
 
         [HttpGet]
-        public IActionResult RecuperaFilmes()
+        public IActionResult RecuperaFilmes([FromBody] int? classificacaoEtaria = null)
         {
-            return Ok(_context.Filmes);
+            List<Filme> filmes;
+            if (classificacaoEtaria == null)
+            {
+                filmes = _context.Filmes.ToList();
+            }
+            else
+            {
+                filmes = _context.Filmes.Where(filme => filme.ClassificacaoEtaria <= classificacaoEtaria).ToList();
+            }
+            if (filmes != null)
+            {
+                List<ReadFilmeDto> readDto = _mapper.Map<List<ReadFilmeDto>>(filmes);
+                return Ok(readDto);
+            }            
+            return NotFound();
         }
 
         [HttpGet("{id}")]

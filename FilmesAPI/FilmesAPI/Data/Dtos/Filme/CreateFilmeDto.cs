@@ -7,7 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 
-namespace FilmesAPI.Data.Dtos.Filme
+namespace FilmesAPI.Data.Dtos
 {
     public class CreateFilmeDto
     {
@@ -20,6 +20,7 @@ namespace FilmesAPI.Data.Dtos.Filme
         public string Genero { get; set; }
         [Range(1, 600, ErrorMessage = " A duração deve conter no minimo 1 e no maximo 600 minutos")]
         public int Duracao { get; set; }
+        public int ClassificacaoEtaria { get; set; }
 
     }
 }

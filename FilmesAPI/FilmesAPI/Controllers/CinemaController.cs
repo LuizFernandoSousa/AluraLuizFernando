@@ -5,7 +5,7 @@ using Org.BouncyCastle.Crypto;
 using AutoMapper;
 using System.Linq;
 using System.Collections.Generic;
-using FilmesAPI.Data.Dtos.Cinema;
+using FilmesAPI.Data.Dtos;
 
 namespace FilmesAPI.Controllers
 {
@@ -15,6 +15,7 @@ namespace FilmesAPI.Controllers
     {
         private AppDbContext _context;
         private IMapper _mapper;
+
         public CinemaController(AppDbContext context, IMapper mapper)
         {
             _context = context;
@@ -27,13 +28,29 @@ namespace FilmesAPI.Controllers
             Cinema cinema = _mapper.Map<Cinema>(cinemaDto);
             _context.Cinemas.Add(cinema);
             _context.SaveChanges();
-            return CreatedAtAction(nameof(RecuperaCinemasPorID), new { id = cinema.Id }, cinema);
+            return CreatedAtAction(nameof(RecuperaCinemasPorID), new { Id = cinema.Id }, cinema);
         }
 
         [HttpGet]
-        public IEnumerable<Cinema> RecuperaCinemas([FromQuery] string nomeDoFilme)
+        public IActionResult RecuperaCinemas([FromQuery] string nomeDoFilme)
         {
-            return _context.Cinemas;
+            List<Cinema> cinemas = _context.Cinemas.ToList();
+            if (cinemas == null)
+            {
+                return NotFound();
+            }
+            if (!string.IsNullOrEmpty(nomeDoFilme))
+            {
+                IEnumerable<Cinema> query = from cinema in cinemas
+                                            where cinema.Sessoes.Any(sessao =>
+                                            sessao.Filme.Titulo == nomeDoFilme)
+                                            select cinema;
+
+                cinemas = query.ToList();
+            }
+            List<ReadCinemaDto> readDto = _mapper.Map<List<ReadCinemaDto>>(cinemas);
+
+            return Ok(readDto);
         }
 
         [HttpGet("{id}")]

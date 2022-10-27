@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FilmesAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221022221124_Adicionando Sessao")]
-    partial class AdicionandoSessao
+    [Migration("20221027213448_FilmeDb")]
+    partial class FilmeDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -141,7 +141,9 @@ namespace FilmesAPI.Migrations
 
                     b.HasOne("FilmesAPI.Models.Gerente", "Gerente")
                         .WithMany("Cinemas")
-                        .HasForeignKey("GerenteId");
+                        .HasForeignKey("GerenteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Endereco");
 

@@ -139,7 +139,9 @@ namespace FilmesAPI.Migrations
 
                     b.HasOne("FilmesAPI.Models.Gerente", "Gerente")
                         .WithMany("Cinemas")
-                        .HasForeignKey("GerenteId");
+                        .HasForeignKey("GerenteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Endereco");
 

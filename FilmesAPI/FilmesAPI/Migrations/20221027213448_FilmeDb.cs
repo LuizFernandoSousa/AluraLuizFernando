@@ -4,7 +4,7 @@ using MySql.EntityFrameworkCore.Metadata;
 
 namespace FilmesAPI.Migrations
 {
-    public partial class AdicionandoSessao : Migration
+    public partial class FilmeDb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -77,7 +77,7 @@ namespace FilmesAPI.Migrations
                         column: x => x.GerenteId,
                         principalTable: "Gerentes",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
