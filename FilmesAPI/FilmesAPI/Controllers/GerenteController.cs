@@ -6,6 +6,9 @@ using AutoMapper;
 using System.Linq;
 using System;
 using FilmesAPI.Data.Dtos;
+using FilmesAPI.Services;
+using System.Collections.Generic;
+using FluentResults;
 
 namespace FilmesAPI.Controllers
 {
@@ -14,51 +17,41 @@ namespace FilmesAPI.Controllers
 
     public class GerenteController : ControllerBase
     {
-        private AppDbContext _context;
-        private IMapper _mapper;
+        private GerenteServices _gerenteServices;
 
-        public GerenteController(AppDbContext context, IMapper mapper)
+        public GerenteController()
         {
-            _context = context;
-            _mapper = mapper;
+            
         }
         [HttpPost]
         public IActionResult AdicionarGerente([FromBody] CreateGerenteDto gerenteDto)
         {
-            Gerente gerente = _mapper.Map<Gerente>(gerenteDto);
-            _context.Gerentes.Add(gerente);
-            _context.SaveChanges();
-            return CreatedAtAction(nameof(RecuperaGerentesPorId), new { id = gerente.Id }, gerente);
+            ReadGerenteDto readDto = _gerenteServices.AdicionarGerente(gerenteDto);            
+            return CreatedAtAction(nameof(RecuperaGerentesPorId), new { id = readDto.Id }, readDto);
 
         }
+
         
         [HttpGet("{id}")]
         public IActionResult RecuperaGerentesPorId(int id)
         {
-
-            Gerente gerente = _context.Gerentes.FirstOrDefault(gerente => gerente.Id == id);
-
+            ReadGerenteDto gerente = _gerenteServices.RecuperaGerentesPorId(id);
             if (gerente != null)
             {
-                ReadGerenteDto gerenteDto = _mapper.Map<ReadGerenteDto>(gerente);
-
                 return Ok(gerente);
             }
-
             return NotFound();
         }
        
         [HttpDelete("{id}")]
         public IActionResult DeletaGerente(int id)
         {
-            Gerente gerente = _context.Gerentes.FirstOrDefault(gerente => gerente.Id == id);
-            if (gerente == null)
+            Result result = _gerenteServices.DeletaGerente(id);
+            if (result.IsSuccess)
             {
-                return NotFound();
+                return NoContent();
             }
-            _context.Remove(gerente);
-            _context.SaveChanges();
-            return NoContent();
+            return NotFound();
         }
 
 
