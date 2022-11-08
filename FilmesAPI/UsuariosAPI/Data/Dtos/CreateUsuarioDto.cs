@@ -12,6 +12,7 @@ namespace UsuariosAPI.Data.Dtos
         [DataType(DataType.Password)]
         public string Password { get; set; }
         [Required]
+        [DataType(DataType.Password)]
         [Compare("Password")]
         public string rePassword { get; set; }
 

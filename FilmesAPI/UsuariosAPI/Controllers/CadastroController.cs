@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using MySqlX.XDevAPI.Common;
+﻿using FluentResults;
+using Microsoft.AspNetCore.Mvc;
 using UsuariosAPI.Data.Dtos;
 using UsuariosAPI.Services;
 
@@ -20,7 +20,8 @@ namespace UsuariosAPI.Controllers
         public IActionResult CadastraUsuario(CreateUsuarioDto createDto)
         {
             Result result = _cadastroService.CadastraUsuario(createDto);
-            return Ok();
+            if (result.IsFailed) return StatusCode(500, "Não foi possível cadastrar");
+                return Ok();
         }
 
 

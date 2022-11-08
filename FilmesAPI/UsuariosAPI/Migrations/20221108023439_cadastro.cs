@@ -4,7 +4,7 @@ using MySql.EntityFrameworkCore.Metadata;
 
 namespace UsuariosAPI.Migrations
 {
-    public partial class CriandoUsuario : Migration
+    public partial class cadastro : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
