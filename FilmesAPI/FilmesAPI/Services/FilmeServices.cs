@@ -24,7 +24,7 @@ namespace FilmesAPI.Services
             Filme filme = _mapper.Map<Filme>(filmedto);
             _context.Filmes.Add(filme);
             _context.SaveChanges();
-            return _mapper.Map<ReadFilmeDto>(filmedto);
+            return _mapper.Map<ReadFilmeDto>(filme);
         }
 
         public List<ReadFilmeDto> RecuperaFilmes(int? classificacaoEtaria)

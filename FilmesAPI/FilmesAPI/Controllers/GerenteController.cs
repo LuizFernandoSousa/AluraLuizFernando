@@ -19,14 +19,14 @@ namespace FilmesAPI.Controllers
     {
         private GerenteServices _gerenteServices;
 
-        public GerenteController()
+        public GerenteController(GerenteServices gerenteService)
         {
-            
+            _gerenteServices = gerenteService;
         }
         [HttpPost]
         public IActionResult AdicionarGerente([FromBody] CreateGerenteDto gerenteDto)
         {
-            ReadGerenteDto readDto = _gerenteServices.AdicionarGerente(gerenteDto);            
+            ReadGerenteDto readDto = _gerenteServices.AdicionarGerente(gerenteDto);              
             return CreatedAtAction(nameof(RecuperaGerentesPorId), new { id = readDto.Id }, readDto);
 
         }

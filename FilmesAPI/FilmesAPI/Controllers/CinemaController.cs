@@ -19,7 +19,7 @@ namespace FilmesAPI.Controllers
        
         public CinemaController(CinemaServices cinemaServices)
         {
-            
+            _cinemaService = cinemaServices;
         }
 
         [HttpPost]

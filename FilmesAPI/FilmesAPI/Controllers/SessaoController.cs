@@ -17,9 +17,9 @@ namespace FilmesApi.Controllers
     {
         private SessaoServices _sessaServices;
 
-        public SessaoController()
+        public SessaoController(SessaoServices sessaoServices)
         {
-            
+            _sessaServices = sessaoServices;
         }
 
         [HttpPost]

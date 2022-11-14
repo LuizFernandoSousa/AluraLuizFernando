@@ -25,7 +25,7 @@ namespace FilmesAPI.Services
             Cinema cinema = _mapper.Map<Cinema>(cinemaDto);
             _context.Cinemas.Add(cinema);
             _context.SaveChanges();
-            return _mapper.Map<ReadCinemaDto>(cinemaDto);
+            return _mapper.Map<ReadCinemaDto>(cinema);
         }
 
         public List<ReadCinemaDto> RecuperaCinemas(string nomeDoCinema)

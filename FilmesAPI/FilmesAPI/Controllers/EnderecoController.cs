@@ -22,7 +22,7 @@ namespace FilmesAPI.Controllers
 
         public EnderecoController(EnderecoServices enderecoServices)
         {
-            
+            _enderecoServices = enderecoServices;
         }
 
         [HttpPost]

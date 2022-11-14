@@ -23,7 +23,7 @@ namespace FilmesAPI.Services
             Endereco endereco = _mapper.Map<Endereco>(enderecoDto);
             _context.Enderecos.Add(endereco);
             _context.SaveChanges();
-            return _mapper.Map<ReadEnderecoDto>(enderecoDto);
+            return _mapper.Map<ReadEnderecoDto>(endereco);
         }
 
         internal Result AtualizarEndereco(int id, UpdateEnderecoDto enderecoDto)
