@@ -4,7 +4,7 @@ using MySql.EntityFrameworkCore.Metadata;
 
 namespace FilmesAPI.Migrations
 {
-    public partial class FilmeDb : Migration
+    public partial class filmes : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
