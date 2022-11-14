@@ -31,7 +31,12 @@ namespace UsuariosAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<UserDbContext>(options => options.UseMySQL(Configuration.GetConnectionString("UsuarioConnection")));
-            services.AddIdentity<IdentityUser<int>, IdentityRole<int>>().AddEntityFrameworkStores<UserDbContext>().AddDefaultTokenProviders();
+            services.AddIdentity<IdentityUser<int>, IdentityRole<int>>(
+
+                opt => opt.SignIn.RequireConfirmedEmail = true
+                
+                )
+                .AddEntityFrameworkStores<UserDbContext>().AddDefaultTokenProviders();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
@@ -40,6 +45,8 @@ namespace UsuariosAPI
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddScoped<CadastroService, CadastroService>();
             services.AddScoped<LoginService, LoginService>();
+            services.AddScoped<TokenService, TokenService>();
+            services.AddScoped<LogoutService, LogoutService>();
             services.Configure<IdentityOptions>(options =>
             {
                 options.Password.RequireNonAlphanumeric = false;

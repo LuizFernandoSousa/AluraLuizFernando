@@ -9,8 +9,8 @@ using UsuariosAPI.Data;
 namespace UsuariosAPI.Migrations
 {
     [DbContext(typeof(UserDbContext))]
-    [Migration("20221108023439_cadastro")]
-    partial class cadastro
+    [Migration("20221108213234_vai")]
+    partial class vai
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

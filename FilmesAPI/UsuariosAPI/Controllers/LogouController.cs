@@ -1,39 +1,30 @@
 ﻿using FluentResults;
 using Microsoft.AspNetCore.Mvc;
-using UsuariosAPI.Data.Requests;
 using UsuariosAPI.Services;
 
 namespace UsuariosAPI.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class LoginController : ControllerBase
+    public class LogouController : ControllerBase
     {
-        private LoginService _loginService;
+        private LogoutService _logoutService;
 
-        public LoginController(LoginService loginService)
+        public LogouController(LogoutService logoutService )
         {
-            _loginService = loginService;
+            _logoutService = logoutService;
         }
 
         [HttpPost]
-        public IActionResult LogaUsuario(LoginRequest request)
+        public IActionResult DeslogaUsuario()
         {
-
-            Result result = _loginService.LogaUsuario(request);
+            Result result = _logoutService.DeslogaUsuario();
             if (result.IsFailed)
             {
                 return Unauthorized(result.Errors);
             }
             return Ok(result.Successes);
         }
-
-
-
-
-
-
-
 
     }
 }
