@@ -3,6 +3,7 @@ using FluentResults;
 using Microsoft.AspNetCore.Identity;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web;
 using UsuariosAPI.Data.Dtos;
 using UsuariosAPI.Data.Requests;
 using UsuariosAPI.Models;
@@ -32,7 +33,8 @@ namespace UsuariosAPI.Services
             if (resultadoIdentity.Result.Succeeded)
             {
                 var code = _userManager.GenerateEmailConfirmationTokenAsync(usuarioIdentity).Result; 
-                //_emailService.EnviarEmail(new[] {usuarioIdentity.Email},"Link de ativação",usuarioIdentity.Id,code);
+                var encodedCode = HttpUtility.UrlEncode(code);
+                _emailService.EnviarEmail(new[] {usuarioIdentity.Email},"Link de ativação",usuarioIdentity.Id, encodedCode);
                 return Result.Ok().WithSuccess(code);
             }
             else
@@ -43,10 +45,10 @@ namespace UsuariosAPI.Services
 
         public Result AtivaContaUsuario(AtivaContaRequest request)
         {
-            var identityUser = _userManager.Users.Where(u => u.Id == request.UsuarioId).FirstOrDefault();
-            var identityResult = _userManager.ConfirmEmailAsync(identityUser, request.CodigoDeAtivacao);
+            var identityUser = _userManager.Users.FirstOrDefault(u => u.Id == request.UsuarioId);
+            var identityResult = _userManager.ConfirmEmailAsync(identityUser, request.CodigoDeAtivacao).Result;
 
-            if (identityResult.Result.Succeeded)
+            if (identityResult.Succeeded)
             {
                 return Result.Ok();
             }

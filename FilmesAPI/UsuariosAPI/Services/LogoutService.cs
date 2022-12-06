@@ -1,5 +1,6 @@
 ﻿using FluentResults;
 using Microsoft.AspNetCore.Identity;
+using System.Threading.Tasks;
 
 namespace UsuariosAPI.Services
 {
@@ -15,6 +16,7 @@ namespace UsuariosAPI.Services
         public Result DeslogaUsuario()
         {
             var resultadoIdentity = _signInManager.SignOutAsync();
+
             if (resultadoIdentity.IsCompletedSuccessfully)
             {
                 return Result.Ok();
@@ -24,13 +26,6 @@ namespace UsuariosAPI.Services
                 return Result.Fail("Logout Falhou");
             }
 
-
-
         }
-
-
-
-
-
     }
 }

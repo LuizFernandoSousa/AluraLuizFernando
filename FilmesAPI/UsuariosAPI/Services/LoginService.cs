@@ -23,10 +23,8 @@ namespace UsuariosAPI.Services
             var resultadoIdentity = _signInManager.PasswordSignInAsync(request.Username, request.Password, false, false);
             if (resultadoIdentity.Result.Succeeded)
             {
-                var identityUser = _signInManager
-                    .UserManager
-                    .Users.FirstOrDefault(usuario => usuario
-                    .NormalizedUserName == request.Username.ToUpper()
+                var identityUser = _signInManager.UserManager.Users.FirstOrDefault(usuario => 
+                    usuario.NormalizedUserName == request.Username.ToUpper()
                     );
                 Token token = _tokenService.CreateToken(identityUser);
                 return Result.Ok().WithSuccess(token.Value);
