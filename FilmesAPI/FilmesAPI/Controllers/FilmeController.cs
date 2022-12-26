@@ -4,6 +4,7 @@ using FilmesAPI.Data.Dtos;
 using FilmesAPI.Models;
 using FilmesAPI.Services;
 using FluentResults;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -25,7 +26,7 @@ namespace FilmesAPI.Controllers
         }
 
         [HttpPost]
-
+        [Authorize(Roles ="admin")]
         public IActionResult AdicionaFilme([FromBody] CreateFilmeDto filmedto)
         {
 
