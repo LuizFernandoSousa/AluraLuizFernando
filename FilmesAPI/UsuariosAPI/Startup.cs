@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using UsuariosAPI.Data;
+using UsuariosAPI.Models;
 using UsuariosAPI.Services;
 
 namespace UsuariosAPI
@@ -31,7 +32,7 @@ namespace UsuariosAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<UserDbContext>(options => options.UseMySQL(Configuration.GetConnectionString("UsuarioConnection")));
-            services.AddIdentity<IdentityUser<int>, IdentityRole<int>>(
+            services.AddIdentity<CustomIdentityUser, IdentityRole<int>>(
 
                 opt => opt.SignIn.RequireConfirmedEmail = true
                 

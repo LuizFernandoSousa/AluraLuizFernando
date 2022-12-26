@@ -65,3 +65,8 @@ D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\Usu
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\UsuariosAPI\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\UsuariosAPI\bin\Debug\net5.0\MailKit.dll
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\UsuariosAPI\bin\Debug\net5.0\MimeKit.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\UsuariosAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\UsuariosAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authorization.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\UsuariosAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Metadata.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\UsuariosAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\UsuariosAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

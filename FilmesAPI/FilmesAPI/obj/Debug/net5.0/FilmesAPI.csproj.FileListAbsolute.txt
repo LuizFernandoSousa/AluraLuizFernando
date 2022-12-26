@@ -54,3 +54,12 @@ D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\Fil
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Proxies.dll
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\FluentResults.dll
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authorization.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Metadata.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\FilmesAPI\FilmesAPI\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
