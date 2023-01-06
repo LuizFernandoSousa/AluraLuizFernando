@@ -25,3 +25,14 @@ D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\Movi
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\obj\Debug\net6.0\MovieAPI.pdb
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\obj\Debug\net6.0\MovieAPI.genruntimeconfig.cache
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\obj\Debug\net6.0\ref\MovieAPI.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\bin\Debug\net6.0\Humanizer.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\bin\Debug\net6.0\MySqlConnector.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\bin\Debug\net6.0\AutoMapper.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

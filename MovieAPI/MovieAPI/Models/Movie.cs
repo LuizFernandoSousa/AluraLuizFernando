@@ -4,7 +4,8 @@ namespace MovieAPI.Models;
 
 public class Movie
 {
-
+    [Key]
+    [Required]
     public int Id { get; set; }
 
 

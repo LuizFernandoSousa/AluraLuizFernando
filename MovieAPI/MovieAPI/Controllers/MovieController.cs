@@ -1,46 +1,70 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using MovieAPI.Data;
+using MovieAPI.Data.Dtos;
 using MovieAPI.Models;
 
-namespace MovieAPI.Controllers
+namespace MovieAPI.Controllers;
+
+[ApiController]
+[Route("[controller]")]
+
+public class MovieController : ControllerBase
 {
 
-    [ApiController]
-    [Route("[controller]")]
+    private MovieContext _context;
+    private IMapper _mapper;
 
-    public class MovieController : ControllerBase
+    public MovieController(MovieContext context, IMapper mapper)
     {
+        _context = context;
+        _mapper = mapper;
+    }
 
-        private static List<Movie> movies = new List<Movie>();
-        private static int id = 0;
+    [HttpPost]
+    public IActionResult AddMovie([FromBody] CreateMovieDto movieDto)
+    {
+        Movie movie = _mapper.Map<Movie>(movieDto);
+        _context.Movies.Add(movie);
+        _context.SaveChanges();
+        return CreatedAtAction(nameof(readMovieForID), new { id = movie.Id }, movie);
+        
+    }
 
-        [HttpPost]
-        public IActionResult AddMovie([FromBody] Movie movie)
+    [HttpGet]
+    public IEnumerable<Movie> readMovies([FromQuery] int skip = 0, int take = 20)
+    {
+        return _context.Movies.Skip(skip).Take(take);
+    }
+
+    [HttpGet("{id}")]   
+    public IActionResult readMovieForID(int id)
+    {
+        var movie =  _context.Movies.FirstOrDefault(movie => movie.Id == id);
+
+        if (movie == null)
         {
-            movie.Id = id++;
-            movies.Add(movie);
-            return CreatedAtAction(nameof(readMovieForID), new { id = movie.Id }, movie);
-            
+           return NotFound();
         }
-
-        [HttpGet]
-        public IEnumerable<Movie> readMovies([FromQuery] int skip = 0, int take = 20)
-        {
-            return movies.Skip(skip).Take(take);
-        }
-
-        [HttpGet("{id}")]   
-        public IActionResult readMovieForID(int id)
-        {
-            var movie =  movies.FirstOrDefault(movie => movie.Id == id);
-
-            if (movie == null)
-            {
-               return NotFound();
-            }
-            return Ok();
-
-        }
-
+        return Ok(movie);
 
     }
+
+
+    [HttpPut("{id}")]
+    public IActionResult UpdateMovie(int id, [FromBody] UpdateMovieDto movieDto)
+    {
+        var movie =_context.Movies.FirstOrDefault(
+            movie => movie.Id == id);
+        if (movie == null)
+        {
+            return NotFound();
+        }
+        _mapper.Map(movieDto, movie);
+        _context.SaveChanges();
+
+        return NoContent();
+    }
+
+
 }
