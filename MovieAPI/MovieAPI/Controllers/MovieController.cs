@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using MovieAPI.Data;
 using MovieAPI.Data.Dtos;
@@ -32,9 +33,9 @@ public class MovieController : ControllerBase
     }
 
     [HttpGet]
-    public IEnumerable<Movie> readMovies([FromQuery] int skip = 0, int take = 20)
+    public IEnumerable<ReadMovieDto> readMovies([FromQuery] int skip = 0, int take = 20)
     {
-        return _context.Movies.Skip(skip).Take(take);
+        return _mapper.Map<List<ReadMovieDto>>(_context.Movies.Skip(skip).Take(take));
     }
 
     [HttpGet("{id}")]   
@@ -46,7 +47,9 @@ public class MovieController : ControllerBase
         {
            return NotFound();
         }
-        return Ok(movie);
+        var movieDto = _mapper.Map<ReadMovieDto>(movie);
+
+        return Ok(movieDto);
 
     }
 
@@ -65,6 +68,46 @@ public class MovieController : ControllerBase
 
         return NoContent();
     }
+
+    [HttpPatch("{id}")]
+    public IActionResult UpdateMoviePartial(int id, JsonPatchDocument<UpdateMovieDto> patch)
+    {
+        var movie = _context.Movies.FirstOrDefault(
+            movie => movie.Id == id);
+        if (movie == null)
+        {
+            return NotFound();
+        }
+
+        var movieForUpdate = _mapper.Map<UpdateMovieDto>(movie);
+
+        patch.ApplyTo(movieForUpdate, ModelState);
+
+        if (!TryValidateModel(movieForUpdate))
+        {
+            return ValidationProblem(ModelState);
+        }
+        _mapper.Map(movieForUpdate, movie);
+        _context.SaveChanges();
+
+        return NoContent();
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult DeleteMovie(int id)
+    {
+        var movie = _context.Movies.FirstOrDefault(
+            movie => movie.Id == id);
+        if (movie == null)
+        {
+            return NotFound();
+        }
+        _context.Remove(movie);
+        _context.SaveChanges();
+
+        return NoContent();
+    }
+
 
 
 }

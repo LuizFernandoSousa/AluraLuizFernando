@@ -36,3 +36,7 @@ D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\Movi
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\bin\Debug\net6.0\AutoMapper.dll
 D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Luiz - PC\Aula de programação\Estudos de C#\AluraLuizFernando\MovieAPI\MovieAPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
